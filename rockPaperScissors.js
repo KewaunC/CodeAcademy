@@ -11,7 +11,6 @@ const getUserChoice = (userInput) => {
   }
 };
 
-console.log(getUserChoice("Paper"));
 
 const getComputerChoice = () => {
   randomNumber = Math.floor(Math.random() * 3);
@@ -23,7 +22,6 @@ const getComputerChoice = () => {
     return "scissors";
   }
 };
-console.log(getComputerChoice());
 
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
@@ -53,4 +51,15 @@ const determineWinner = (userChoice, computerChoice) => {
   }
 };
 
-console.log(determineWinner('rock', 'rock'))
+
+const playGame = () => {
+  const userChoice = getUserChoice("rock");
+  const computerChoice = getComputerChoice();
+
+  console.log("You threw: " + userChoice);
+  console.log("The computer threw:" + computerChoice);
+
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame();
