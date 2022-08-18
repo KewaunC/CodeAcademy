@@ -19,4 +19,4 @@ const plantNeedsWater = (day) => {
 
 
 //can I shorten it even more?
-const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;  
